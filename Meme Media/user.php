@@ -1,0 +1,152 @@
+<?php
+include('home_process.php');
+include('user_process.php'); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> <?php echo $fin_res['name'] ?> </title>
+  <link rel="stylesheet" href="user.css" />
+  <link rel="icon" type="image/x-icon"  href="uploads/<?= $row['pro_pic'] ?>">
+</head>
+
+<body>
+
+
+
+  <div class="nav-bar">
+
+    <a href="home.php" style="text-decoration: none; color: black">
+      <h1 style="margin-top:1%">MEME MEDIA</h1>
+    </a>
+
+
+    <a href="#" class="sign" id="profile">
+      <p> <?php echo "<p style='float:left;margin-right:3%';>" . $fin_resh['name'] . "<p>" ?></p> <img src="uploads/<?= $rowh['pro_pic'] ?>" class="pro_user" />
+    </a>
+    <script>
+      document.getElementById("profile").addEventListener("click", function() {
+        document.querySelector(".profile_box").style.display = "flex";
+      });
+    </script>
+    <script>
+      document.addEventListener('mouseup', function(e) {
+        var container = document.querySelector(".profile_box");
+        if (!container.contains(e.target)) {
+          container.style.display = 'none';
+        }
+      });
+    </script>
+
+    <div class="nav-again">
+      <ul>
+        <li>
+          <a href="home.php"> <img src="images/home.png" alt="upload" width="30px"></a>
+        </li>
+
+        <li>
+          <a href="#" id="upload"><img src="images/tabs.png" alt="upload" width="30px"></a>
+        </li>
+
+        <li>
+          <a href="meme.php"><img src="images/writing.png" alt="upload" width="30px"></a>
+        </li>
+
+
+
+
+      </ul>
+    </div>
+
+
+    <!-- uploader -->
+
+    <div class="bg-modal">
+      <div class="container">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <div class="form-group">
+            <img src="images/hold_up.png" onchange="displayImage(this)" onclick="triggerClick()" id="profileDisplay" />
+
+            <input type="file" name="upmeme" id="profileImage" style="display: none" required />
+
+            <button class="up-btn" name="load">Upload</button>
+
+            <script src="home.js"></script>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("upload").addEventListener("click", function() {
+        document.querySelector(".bg-modal").style.display = "flex";
+      });
+    </script>
+
+    <script>
+      document.addEventListener('mouseup', function(e) {
+        var container = document.querySelector(".bg-modal");
+        if (!container.contains(e.target)) {
+          container.style.display = 'none';
+        }
+      });
+    </script>
+
+
+    <script>
+      if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+      }
+    </script>
+
+
+  </div>
+
+
+
+  <div class=" cover-page">
+    <img src="uploads/<?= $row['pro_pic'] ?>" class="profile-page" />
+  </div>
+
+  <div class="name-container">
+    <h1><?php echo $fin_res['name']; ?></h1>
+    <p><?php echo "#" . $nam; ?></p>
+  </div>
+
+
+  <div class="meme-container">
+    <?php
+
+    $query = " SELECT meme FROM meme_tab where user_name = '$nam' order by id";
+    $query_run = mysqli_query($conn, $query);
+
+    while ($row = mysqli_fetch_array($query_run)) {
+      echo "<img src='memes/" . $row['meme'] . "'  class='meme-grid'>";
+    }
+    ?>
+
+  </div>
+
+  <div class="profile_box">
+
+    <div class="profile_box_cont">
+      <a href="user.php"> <img src="images/user.png" alt="" width="20px">
+        <p style="margin-left:10%"> Profile </p>
+      </a>
+
+      <a href="logout.php?logout" style="margin-top:-12%;"> <img src="images/log-out.png" alt="" width="20px">
+        <p style="margin-left:10%;"> SignOut </p>
+      </a>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

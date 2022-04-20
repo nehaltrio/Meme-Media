@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poppins&family=Roboto:wght@300;500&family=Source+Sans+Pro&family=Staatliches&family=Yantramanav&display=swap");
+
+.body,
+html {
+  background: rgb(247, 247, 247);
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-again ul {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  top: 3%;
+  left: 37%;
+  padding: 10px;
+}
+
+.nav-again li {
+  list-style: none;
+  margin: 0 10px;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+}
+
+.nav-again a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-bar h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+
+  margin-left: 5%;
+}
+
+.sign {
+  text-decoration: none;
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  top: 3%;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bg-modal {
+  position: absolute;
+  left: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  border-radius: 10px;
+}
+
+.container {
+  width: 400px;
+  height: 420px;
+  background: white;
+  border-radius: 10px;
+  padding: 40px 30px;
+  float: left;
+  position: relative;
+}
+
+#profileDisplay {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: scale-down;
+  background-color: white;
+}
+
+.form-group {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.up-btn {
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.test {
+  width: 650px;
+  height: 600px;
+  object-fit: scale-down;
+  background-color: white;
+}
+
+.pro_test {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: scale-down;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.pro_user {
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: scale-down;
+  float: left;
+}
+
+.image-cont a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.image-cont {
+  position: relative;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid rgb(194, 194, 194);
+  height: 650px;
+  width: 650px;
+  text-align: center;
+  overflow: hidden;
+  margin: 2% auto;
+  object-fit: scale-down;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile_box {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 100px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  position: fixed;
+  top: 9%;
+  left: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  z-index: 100;
+}
+
+.profile_box_cont {
+  /* margin-top: 7%; */
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.profile_box_cont a {
+  text-decoration: none;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nothing {
+  height: 70px;
+}
+
+.top_page button {
+  position: fixed;
+  left: 95%;
+  bottom: 5%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  left: 90%;
+}

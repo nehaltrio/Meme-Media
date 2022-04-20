@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poppins&family=Roboto:wght@300;500&family=Source+Sans+Pro&family=Staatliches&family=Yantramanav&display=swap");
+
+.body,
+html {
+  background: rgb(247, 247, 247);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.headCont {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 12%;
+  margin-right: 35%;
+}
+
+.headCont h1 {
+  font-size: 80px;
+  font-family: "Staatliches", cursive;
+}
+
+.headCont p,
+h1 {
+  margin: 0px;
+  padding-top: 15px;
+}
+.headCont b {
+  font-family: "Staatliches", cursive;
+}
+
+.headCont a {
+  text-decoration: none;
+}
+.headCont p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Yantramanav", sans-serif;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+
+.acc_btn {
+  margin-top: 5%;
+  border: solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Yantramanav", sans-serif;
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.acc_btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.sponge {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  color: wheat;
+  top: 47%;
+  left: 72%;
+}
+
+/* For Nav Bar */
+
+.menu a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.acc_btn a {
+  text-decoration: none;
+}
+
+.menu ul {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  top: 2%;
+  left: 85%;
+  padding: 10px;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+.sign_up {
+  background-color: rgb(0, 0, 0);
+  height: 25px;
+  padding-top: 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.login {
+  min-height: 100vh;
+}
+
+
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.container {
+  /* margin-top: 1.5%;
+  margin-left: 60%; */
+  width: 500px;
+  height: 670px;
+  background: rgb(247, 247, 247);;
+  border-radius: 10px;
+  padding: 40px 30px;
+  float: left;
+  position: relative;
+}
+
+.container .login-text {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 2%;
+  display: block;
+  font-family: "Staatliches", cursive;
+  text-transform: capitalize;
+}
+
+.container .login-email .input-group {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+}
+.container .login-email .input-group input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+  border-color: rgb(0, 0, 0);
+}
+
+.container .login-email .input-group .btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: rgb(0, 0, 0);
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* .containerlogin-email .input-group .btn:hover {
+  transform: translateY(-5px);
+  background: #6c5ce7;
+} */
+
+#profileDisplay {
+  display: block;
+  margin: 0 auto;
+  width: 170px;
+  height: 170px;
+  object-fit: scale-down;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+}
+
+.form-group {
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+
+.form-group img {
+  border: solid rgb(0, 0, 0) 5px;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  font-weight: bolder;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  text-align: center;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.bg-login {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.close-login {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  font-weight: bolder;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close-login:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  text-align: center;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.sign-up-text {
+  text-align: center;
+  margin-bottom: 40px;
+  display: block;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.mgen-btn {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 170px;
+  height: 30px;
+  text-align: center;
+  padding-top: 6px;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+}
+
+.mgen-btn a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+

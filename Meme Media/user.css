@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poppins&family=Roboto:wght@300;500&family=Source+Sans+Pro&family=Staatliches&family=Yantramanav&display=swap");
+
+.body,
+html {
+  background: rgb(247, 247, 247);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-again ul {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  top: 3%;
+  left: 37%;
+  padding: 10px;
+}
+
+.nav-again li {
+  list-style: none;
+  margin: 0 10px;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+}
+
+.nav-again a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-bar h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+
+  margin-left: 5%;
+}
+
+
+
+.cover-page {
+  background: url(images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+  
+}
+
+.profile-page {
+  display: inline-block;
+  left: 42%;
+  top: 33%;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: scale-down;
+  background-color: white;
+  border: 7px solid rgb(0, 0, 0);
+ 
+}
+
+.name-container {
+  /* position: relative; */
+  text-align: center;
+  margin-top: 7.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-container p {
+  margin-top: -1%;
+}
+
+.logout {
+  background-color: rgb(255, 92, 92);
+  text-align: center;
+  height: 30px;
+  width: 110px;
+  margin-left: 91.5%;
+  margin-top: 2%;
+  padding-top: 4px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout a {
+  text-decoration: none;
+  color: white;
+}
+
+.meme-grid {
+  width: 350px;
+  height: 300px;
+  object-fit: scale-down;
+  background-color: white;
+  float: left;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.meme-container{
+  width: 80%;
+  margin: 2% auto;
+}
+
+.pro_user {
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: scale-down;
+  float: left;
+}
+
+.sign {
+  text-decoration: none;
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  top: 3%;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bg-modal {
+  position: absolute;
+  left: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  border-radius: 10px;
+}
+
+.container {
+  width: 400px;
+  height: 470px;
+  background: white;
+  border-radius: 10px;
+  padding: 40px 30px;
+  float: left;
+  position: relative;
+}
+
+
+#profileDisplay {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: scale-down;
+  background-color: white;
+}
+
+.form-group {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+
+
+.up-btn {
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+
+.profile_box{
+  background-color: rgb(236, 236, 236);
+  width: 200px;
+  height: 100px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  position: fixed;
+  top: 9%;
+  left: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  z-index: 100;
+  
+}
+
+.profile_box_cont{
+  /* margin-top: 7%; */
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.profile_box_cont a{
+  text-decoration: none;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}

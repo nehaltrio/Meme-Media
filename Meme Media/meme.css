@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poppins&family=Roboto:wght@300;500&family=Source+Sans+Pro&family=Staatliches&family=Yantramanav&display=swap");
+
+body {
+  background: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+}
+
+.container2 {
+  display: flex;
+  /* z-index: -1; */
+}
+.sidebar {
+  background-color: rgba(108, 108, 108, 0.1);
+  margin-left: 1em;
+  padding: 1em;
+  border-radius: 3px;
+  padding-top: 10%;
+}
+
+.group {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5em;
+  margin: 1em 0;
+  border-radius: 3px;
+}
+.group *,
+button {
+  display: block;
+  margin: 0.5em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5em;
+}
+
+.textBtn {
+  background-color: rgb(191, 191, 191);
+  border: none;
+  height: 30px;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Yantramanav", sans-serif;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: rgb(184, 184, 184);
+  border: none;
+  height: 15px;
+  font-family: "Yantramanav", sans-serif;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    resize: none;
+    font-family: "Yantramanav", sans-serif;
+  }
+
+  
+canvas{
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+  border-radius: 5px;
+	width: 100%;
+}
+
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-again ul {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  top: 3%;
+  left: 37%;
+  padding: 10px;
+}
+
+.nav-again li {
+  list-style: none;
+  margin: 0 10px;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+}
+
+.nav-again a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-bar h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+
+  margin-left: 5%;
+}
+
+.sign {
+  text-decoration: none;
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  top: 3%;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bg-modal {
+  position: absolute;
+  left: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+.container {
+  width: 400px;
+  height: 420px;
+  background: white;
+  border-radius: 10px;
+  padding: 40px 30px;
+  float: left;
+  position: relative;
+
+}
+
+#profileDisplay {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: scale-down;
+  background-color: white;
+}
+
+.form-group {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+
+
+.up-btn {
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+
+.pro_user {
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: scale-down;
+  float: left;
+}
+
+
+
+.profile_box{
+  background-color: rgb(236, 236, 236);
+  width: 200px;
+  height: 100px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  position: fixed;
+  top: 9%;
+  left: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  z-index: 100;
+  
+}
+
+.profile_box_cont{
+  /* margin-top: 7%; */
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.profile_box_cont a{
+  text-decoration: none;
+  color: black;
+  font-family: "Yantramanav", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nothing{
+  height: 70px;
+}
